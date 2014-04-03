@@ -45,15 +45,15 @@ Complexity can be added to the workflow in multiple areas.
 
 1.  Using `R`, R markdown and the `knitr` package to process `R` code and include results in an output markdown file that can be converted to HTML.
 2.  Inline and in text HTML.
-3.  Using css, javascript, Bootstrap framworks and other tools to create more stylized pages and complex (navagable) websites.  These are elements included in the gh-pages directory along with the markdown file.
+3.  Using css, javascript, Bootstrap frameworks and other tools to create more stylized pages and complex (navigable) websites.  These are elements included in the gh-pages directory along with the markdown file.
 
 ---
 
 ##  Markdown_Document Project
 
-I wanted to create something that would allow me to easily turn a markdown file into an attractive documentj with an academic feel to it.  I wanted to be able to include features such as the inclusion of a section numbering, interactive (D3) visualizations, and mathematical equations.  Using css, Liquid templating (for Jekyll), and a few other tools, I've created the "Markdown_Document" project.
+I wanted to create something that would allow me to easily turn a markdown file into an attractive document with an academic feel to it.  I wanted to be able to include features such as the inclusion of a section numbering, interactive (D3) visualizations, and mathematical equations.  Using css, Liquid template (for Jekyll), and a few other tools, I've created the "Markdown_Document" project.
 
-This is a simple, static site that displays an example of the documents that it can produce, which also serves as a manual for its use.  The example page can be viewed [here](http://adamvi.github.io/Markdown_Document/), and the github repository can be viewed/forked/downloaded [here.](https://github.com/adamvi/Markdown_Document)
+This is a simple, static site that displays an example of the documents that it can produce, which also serves as a manual for its use.  The example page can be viewed [here](http://adamvi.github.io/Markdown_Document/), and the Github repository can be viewed/forked/downloaded [here.](https://github.com/adamvi/Markdown_Document)
 
 ---
 
@@ -92,7 +92,7 @@ I will step through the creation of the Github repo, knitting the file, and push
 ##  Knit the .Rmd file
 
 *  Move the Baseline_SGP_Report.Rmd file into the cloned directory file
-*  In R, swith the working directory to the Baseline_SGP_Report directory and then "knit" the file.
+*  In R, switch the working directory to the Baseline_SGP_Report directory and then "knit" the file.
 
 ```
 setwd('Baseline_SGP_Report')
@@ -108,7 +108,7 @@ knit('Baseline_SGP_Report.Rmd', output='index.md')
 
 ##  Edit some files
 
-When we knit the file, we produced a directory called the "cache," which saves some interim results from running the R code.  This is useful when drafting the document and changing `R` code because we don't have to re-run time consuming calculations, data structuring, etc.  However, we don't want this cache to be included in our github repository.  We will "ignore" it using the .gitignore file.
+When we knit the file, we produced a directory called the "cache," which saves some interim results from running the R code.  This is useful when drafting the document and changing `R` code because we don't have to re-run time consuming calculations, data structuring, etc.  However, we don't want this cache to be included in our Github repository.  We will "ignore" it using the .gitignore file.
 
 *  Add "cache/*" to .gitignore.  Other additions may be desired too, such as "_site/*" if you've used Jekyll from the command line to review the finished site before pushing it to Github.
 *  Commit these changes and push to Github.  There will now be a plain website at http://adamvi.github.io/Baseline_SGP_Report/
