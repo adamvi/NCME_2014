@@ -95,7 +95,7 @@
 <ol>
 <li> Using <code>R</code>, R markdown and the <code>knitr</code> package to process <code>R</code> code and include results in an output markdown file that can be converted to HTML.</li>
 <li> Inline and in text HTML.</li>
-<li> Using css, javascript, Bootstrap framworks and other tools to create more stylized pages and complex (navagable) websites.  These are elements included in the gh-pages directory along with the markdown file.</li>
+<li> Using css, javascript, Bootstrap frameworks and other tools to create more stylized pages and complex (navigable) websites.  These are elements included in the gh-pages directory along with the markdown file.</li>
 </ol>
 
   </article>
@@ -107,9 +107,9 @@
     <h2>Markdown_Document Project</h2>
   </hgroup>
   <article data-timings="">
-    <p>I wanted to create something that would allow me to easily turn a markdown file into an attractive documentj with an academic feel to it.  I wanted to be able to include features such as the inclusion of a section numbering, interactive (D3) visualizations, and mathematical equations.  Using css, Liquid templating (for Jekyll), and a few other tools, I&#39;ve created the &quot;Markdown_Document&quot; project.</p>
+    <p>I wanted to create something that would allow me to easily turn a markdown file into an attractive document with an academic feel to it.  I wanted to be able to include features such as the inclusion of a section numbering, interactive (D3) visualizations, and mathematical equations.  Using css, Liquid template (for Jekyll), and a few other tools, I&#39;ve created the &quot;Markdown_Document&quot; project.</p>
 
-<p>This is a simple, static site that displays an example of the documents that it can produce, which also serves as a manual for its use.  The example page can be viewed <a href="http://adamvi.github.io/Markdown_Document/">here</a>, and the github repository can be viewed/forked/downloaded <a href="https://github.com/adamvi/Markdown_Document">here.</a></p>
+<p>This is a simple, static site that displays an example of the documents that it can produce, which also serves as a manual for its use.  The example page can be viewed <a href="http://adamvi.github.io/Markdown_Document/">here</a>, and the Github repository can be viewed/forked/downloaded <a href="https://github.com/adamvi/Markdown_Document">here.</a></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -172,7 +172,7 @@
   <article data-timings="">
     <ul>
 <li> Move the Baseline_SGP_Report.Rmd file into the cloned directory file</li>
-<li> In R, swith the working directory to the Baseline_SGP_Report directory and then &quot;knit&quot; the file.</li>
+<li> In R, switch the working directory to the Baseline_SGP_Report directory and then &quot;knit&quot; the file.</li>
 </ul>
 
 <pre><code>setwd(&#39;Baseline_SGP_Report&#39;)
@@ -193,7 +193,7 @@ knit(&#39;Baseline_SGP_Report.Rmd&#39;, output=&#39;index.md&#39;)
     <h2>Edit some files</h2>
   </hgroup>
   <article data-timings="">
-    <p>When we knit the file, we produced a directory called the &quot;cache,&quot; which saves some interim results from running the R code.  This is useful when drafting the document and changing <code>R</code> code because we don&#39;t have to re-run time consuming calculations, data structuring, etc.  However, we don&#39;t want this cache to be included in our github repository.  We will &quot;ignore&quot; it using the .gitignore file.</p>
+    <p>When we knit the file, we produced a directory called the &quot;cache,&quot; which saves some interim results from running the R code.  This is useful when drafting the document and changing <code>R</code> code because we don&#39;t have to re-run time consuming calculations, data structuring, etc.  However, we don&#39;t want this cache to be included in our Github repository.  We will &quot;ignore&quot; it using the .gitignore file.</p>
 
 <ul>
 <li> Add &quot;cache/<em>&quot; to .gitignore.  Other additions may be desired too, such as &quot;_site/</em>&quot; if you&#39;ve used Jekyll from the command line to review the finished site before pushing it to Github.</li>
