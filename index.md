@@ -120,3 +120,11 @@ When we knit the file, we produced a directory called the "cache," which saves s
 *  Add in the relevant files from the Markdown_Document repository.  Again, you will either want to fork or download the zip file of [this repo.](https://github.com/adamvi/Markdown_Document)  Do not add in .md files (index, README, etc.) or any of the other "example" files.
 *  Commit these changes and push to Github.  There will now be a formatted site at http://adamvi.github.io/Baseline_SGP_Report/
 
+---
+
+## Make changes and push those to the master
+
+Now lets assume we've done some additional work, or one of our colleagues has added in their sections.  Let's add in some text and push that to the gh-pages branch.
+*  Here we are only adding text, so we *could* modify the .md file directly and simply update that without having to "re-knit" our .Rmd file.  However, then we would have our files out of sync.  So lets add in text to the .Rmd file and then re-run `knit('Baseline_SGP_Report.Rmd', output='index.md')`.
+* Once this is done we can push the changes to the gh-pages branch.  Since this is my repo I do not have to do a pull request.  It all happens automatically.  However, if someone were to fork this report and want to make changes or additions to this specific ("official") repo, they would need to issue a pull request to merge their edits in.
+
