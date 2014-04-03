@@ -218,6 +218,22 @@ knit(&#39;Baseline_SGP_Report.Rmd&#39;, output=&#39;index.md&#39;)
   <!-- Presenter Notes -->
 </slide>
 
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Make changes and push those to the master</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Now lets assume we&#39;ve done some additional work, or one of our colleagues has added in their sections.  Let&#39;s add in some text and push that to the gh-pages branch.</p>
+
+<ul>
+<li> Here we are only adding text, so we <em>could</em> modify the .md file directly and simply update that without having to &quot;re-knit&quot; our .Rmd file.  However, then we would have our files out of sync.  So lets add in text to the .Rmd file and then re-run <code>knit(&#39;Baseline_SGP_Report.Rmd&#39;, output=&#39;index.md&#39;)</code>.</li>
+<li>Once this is done we can push the changes to the gh-pages branch.  Since this is my repo I do not have to do a pull request.  It all happens automatically.  However, if someone were to fork this report and want to make changes or additions to this specific (&quot;official&quot;) repo, they would need to issue a pull request to merge their edits in.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
     <slide class="backdrop"></slide>
   </slides>
   <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
@@ -286,6 +302,12 @@ knit(&#39;Baseline_SGP_Report.Rmd&#39;, output=&#39;index.md&#39;)
       <a href="#" target="_self" rel='tooltip' 
         data-slide=11 title='Add in the Markdown_Document elements'>
          11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Make changes and push those to the master'>
+         12
       </a>
     </li>
   </ul>
