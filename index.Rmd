@@ -13,6 +13,7 @@ mode        : selfcontained # {standalone, draft}
 ## Introduction
 
 Github may be the Gutenberg Press for the 21st Century (?)
+
 1.  Free
 2.  Easy
 3.  Customizable - as simple or complex as you want.
@@ -25,7 +26,7 @@ Version control and open environment lend itself to collaboration and replicabil
 
 My typical workflow for going from data and script file to a reproducible report that can be hosted on Github:
 
-`R`/`knitr`/R markdown  ->  markdown  ->  YAML/Jekyll/Liquid -> static HTML
+`R` / `knitr` **/ R markdown   ->   markdown  ->  YAML / Jekyll / Liquid -> static HTML**
 
 ---
 
@@ -51,7 +52,7 @@ Complexity can be added to the workflow in multiple areas.
 
 ##  Markdown_Document Project
 
-I wanted to create something that would allow me to easily turn a markdown file into an attractive document with an academic feel to it.  I wanted to be able to include features such as the inclusion of a section numbering, interactive (D3) visualizations, and mathematical equations.  Using css, Liquid template (for Jekyll), and a few other tools, I've created the "Markdown_Document" project.
+I wanted to create something that would allow me to easily turn a markdown file into an attractive document with an academic feel to it.  I wanted to be able to include features such as the inclusion of a section numbering, interactive (D3) visualizations, and mathematical equations.  Using css, Liquid templating (for Jekyll), and a few other tools, I've created the "Markdown_Document" project.
 
 This is a simple, static site that displays an example of the documents that it can produce, which also serves as a manual for its use.  The example page can be viewed [here](http://adamvi.github.io/Markdown_Document/), and the Github repository can be viewed/forked/downloaded [here.](https://github.com/adamvi/Markdown_Document)
 
